@@ -358,3 +358,32 @@ try:
 except IOError:
     print("FileError: Unable to write to 'Machine Code.txt'.")
     sys.exit(0)
+"""START 1
+LoopOne: CLA
+LAC A
+ADD ='1'
+SUB ='35'
+Loop: BRP Subtraction
+Subtraction: SUB ='5'
+ADD B
+MUL C
+SUB D
+MUL ='600'
+BRZ Zero
+Division: DIV E
+CLA
+LAC REG1
+BRP Positive
+Zero: SAC X
+DSP X
+STP
+Positive: CLA
+DSP REG1
+DSP REG2
+A DATA 250
+B DATA 125
+C DATA 90
+D DATA 88
+E DATA 5
+X DATA 0
+END"""
