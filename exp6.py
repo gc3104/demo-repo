@@ -1,4 +1,4 @@
-#
+# Implementation of intermediate code generation phase of compiler
 class IntermediateCode:
     def __init__(self, code):
         self.code = code
