@@ -106,3 +106,23 @@ if __name__ == "__main__":
     print("\nArgument List Array (ALA) after Pass2:")
     display(ala, alac, 2)
     print("\nNote: Intermediate output of Pass1 and expanded output of Pass2 are stored in files.")
+"""MACRO 
+INCR1 &FIRST,&SECOND=DATA9 
+A 1,&FIRST 
+L 2,&SECOND 
+MEND 
+MACRO 
+INCR2 &ARG1,&ARG2=DATA5 
+L 3,&ARG1 
+ST 4,&ARG2 
+MEND 
+PRG2 START 
+USING *,BASE 
+INCR1 DATA1,DATA2 
+INCR2 DATA3,DATA4 
+FOUR DC F'4' 
+FIVE DC F'5' 
+BASE EQU 8 
+TEMP DS 1F 
+DROP 8 
+END"""
